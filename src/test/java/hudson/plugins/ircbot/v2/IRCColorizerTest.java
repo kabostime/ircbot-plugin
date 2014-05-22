@@ -14,7 +14,7 @@ public class IRCColorizerTest {
 		String message = "Build job123 is STILL FAILING: https://server.com/build/42";
 		String colorizedMessage = IRCColorizer.colorize(message);
 		 
-		assertEquals("Build job123 is " + Colors.BOLD + Colors.RED + "STILL FAILING" + Colors.NORMAL + ": https://server.com/build/42", colorizedMessage);
+		assertEquals("Build job123 is  " + Colors.BOLD + Colors.RED + "STILL FAILING" + Colors.NORMAL + ": https://server.com/build/42", colorizedMessage);
 	}
 	
 }
